@@ -1,7 +1,10 @@
 # DynamicString
+
+----
 Esta cabecera  permite trabajar con string's dinamicos sin tener que preocuparse de reservar memoria, pasandolos al head y reservando previamente memoria mediante la funcion malloc.
 La memoria se reserva al crearse el string inicialmente. Si el string struct tiene la capacidad de almacenar el nuevo string, no reserva memoria nueva, usa la ya reservada. En caso contrario, se reserva mas memoria mediante mmaloc y se copia los datos nuevos a la memoria nueva, acontinuacion de libera la memoria antigua.
 Falta implementar un metodo que libere la memoria de los string's reservados, al finalizar el programa.
+
 ----
 
 # Ejemplo de uso:
